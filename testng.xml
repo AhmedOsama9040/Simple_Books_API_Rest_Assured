@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:\Users\Ahmed Osama\IdeaProjects\SimpleBooks">
+        <classes>
+            <class name="StatusTest">
+                <methods>
+                    <include name="checkAPIStatus"/>
+                </methods>
+            </class>
+            <class name="BookTests">
+                <methods>
+                    <include name="getFictionBooks"/>
+                    <include name="getBooksInvalidScenario"/>
+                    <include name="getSingleBook"/>
+                </methods>
+            </class>
+            <class name="Authentication">
+                <methods>
+                    <include name="apiAuthentication"/>
+                </methods>
+            </class>
+            <class name="OrderTests">
+                <methods>
+                    <include name="submitOrderWithoutAuth"/>
+                    <include name="submitOrderWithAuth"/>
+                    <include name="getOrder"/>
+                    <include name="updateOrder"/>
+                    <include name="deleteOrder"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
